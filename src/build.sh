@@ -24,7 +24,7 @@ if [ "$BUILD_MODE" = "--release" ]; then
     FLAGS="-O3 -Wall -Wextra -Werror"
 # Debug mode (default)
 else
-    WARNINGS="-Wall -Wextra -Werror -Wdouble-promotion -Wno-unused-function -Wno-unused-parameter"
+    WARNINGS="-Wall -Wextra -Werror -Wdouble-promotion -Wno-unused-function -Wno-unused-parameter -Wno-unused-variable"
     FLAGS="-g3 -O0 $WARNINGS -fsanitize=address,undefined -fsanitize-trap"
 fi
 
